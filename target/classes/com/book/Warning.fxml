@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="339.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 5;" styleClass="warning" stylesheets="@Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Warnings">
+   <children>
+      <Text layoutX="214.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning" AnchorPane.leftAnchor="214.0" AnchorPane.topAnchor="47.806640625">
+         <font>
+            <Font name="Verdana Bold" size="36.0" />
+         </font>
+      </Text>
+      <Label fx:id="Message" alignment="CENTER" contentDisplay="CENTER" layoutX="110.0" layoutY="123.0" prefHeight="72.0" prefWidth="400.0" text="This is a test of the warning system" textAlignment="JUSTIFY" textFill="RED" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="123.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <StackPane layoutX="140.0" layoutY="255.0">
+         <children>
+            <HBox fx:id="TwoChoices" layoutX="138.0" layoutY="250.0" spacing="25.0" visible="false" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="250.0">
+               <children>
+                  <Button fx:id="FirstChoice" layoutX="89.0" layoutY="277.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="50.0" prefWidth="150.0" styleClass="GreenButton" text="Confirm">
+                     <font>
+                        <Font name="Verdana Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SecondChoice" layoutX="161.0" layoutY="277.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="50.0" prefWidth="150.0" styleClass="RedButton" text="Cancel">
+                     <font>
+                        <Font name="Verdana Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox fx:id="OneChoice" alignment="CENTER" spacing="25.0">
+               <children>
+                  <Button fx:id="Confirm1" layoutX="89.0" layoutY="277.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="50.0" prefWidth="260.0" styleClass="GreenButton" text="Confirm">
+                     <font>
+                        <Font name="Verdana Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

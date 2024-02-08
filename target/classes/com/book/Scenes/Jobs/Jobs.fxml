@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" styleClass="BackButton" stylesheets="@../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Jobs.JobLoader">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="980.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="980.0" style="-fx-background-color: #09715E; -fx-background-radius: 10 10 0 0;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name" wrappingWidth="271.80078125">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Name" wrappingWidth="187.875">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Start / End" wrappingWidth="209.06640625">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" wrappingWidth="136.42578125">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Pane id="AddButtonContainer" prefHeight="34.0" prefWidth="37.0" styleClass="AddButtonContainer">
+                     <children>
+                        <SVGPath id="AddButton" content="M256,512C114.625,512,0,397.391,0,256C0,114.609,114.625,0,256,0c141.391,0,256,114.609,256,256  C512,397.391,397.391,512,256,512z M256,64C149.969,64,64,149.969,64,256s85.969,192,192,192c106.047,0,192-85.969,192-192  S362.047,64,256,64z M288,384h-64v-96h-96v-64h96v-96h64v96h96v64h-96V384z" scaleX="0.0781" scaleY="0.0781" translateX="-238.0" translateY="-232.0" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefViewportHeight="541.0" prefViewportWidth="980.0" prefWidth="829.0" styleClass="TransparentScrollPane" stylesheets="@../Styles/Application.css">
+               <content>
+                  <VBox id="JobsScrollPane" fx:id="JobsContainer" prefHeight="536.0" prefWidth="844.0" spacing="16.0" styleClass="TransparentScrollPane">
+                     <stylesheets>
+                        <URL value="@../Styles/Application.css" />
+                        <URL value="@../../Styles/Application.css" />
+                     </stylesheets>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

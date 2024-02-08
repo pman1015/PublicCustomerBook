@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="40.0" prefWidth="433.0" style="-fx-background-color: white; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Bills.BillPartCharge">
+   <children>
+      <Label fx:id="PartNumber" layoutX="14.0" layoutY="11.0" prefHeight="18.0" prefWidth="129.0" text="Part Number Here">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Cost" layoutX="161.0" layoutY="11.0" prefHeight="18.0" prefWidth="79.0" text="Cost">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Charge" layoutX="240.0" layoutY="11.0" prefHeight="18.0" prefWidth="79.0" text="Charge">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Quanity" layoutX="330.0" layoutY="11.0" prefHeight="18.0" prefWidth="79.0" text="Quanity">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow color="#000000bf" offsetX="5.0" offsetY="5.0" spread="0.12" />
+   </effect>
+</AnchorPane>

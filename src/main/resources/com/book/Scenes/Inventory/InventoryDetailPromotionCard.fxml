@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" onMouseClicked="#UpdatePromo" prefHeight="34.0" prefWidth="230.0" styleClass="HoverablePane" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Inventory.InventoryPartDetailPromoCard">
+   <children>
+      <Label fx:id="Count" prefHeight="23.0" prefWidth="71.0" text="1" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label fx:id="Price" prefHeight="23.0" prefWidth="73.0" text="200.0" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Charge" prefHeight="23.0" prefWidth="73.0" text="400.0" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</HBox>

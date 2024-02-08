@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="74.0" prefWidth="1200.0" style="-fx-background-color: #09715e;" styleClass="HeaderLabel" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Header">
+   <children>
+      <Text fill="#fefcfd" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Mike Hurd">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </VBox.margin>
+      </Text>
+      <AnchorPane prefHeight="74.0" prefWidth="769.0">
+         <children>
+            <Button id="IconButton" layoutX="609.0" layoutY="14.0" mnemonicParsing="false" onAction="#CloseWindow" styleClass="IconButton" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="12.0">
+               <graphic>
+                  <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" fill="WHITE" strokeWidth="2.0" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="BillInfo" layoutX="16.0" prefHeight="610.0" prefWidth="560.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Bills.BillInfo">
+   <children>
+      <Text fill="WHITE" layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill">
+         <font>
+            <Font name="Verdana Bold" size="36.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="418.0" layoutY="11.0" style="-fx-background-color: white; -fx-background-radius: 5;" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <Text fx:id="BillStatus" fill="#09715e" strokeType="OUTSIDE" strokeWidth="0.0" text="PAID">
+               <font>
+                  <Font name="Verdana Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </padding>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="105.0" prefHeight="180.0" prefWidth="528.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="103.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts:" wrappingWidth="79.4609375">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="23.0" prefWidth="152.0" text="Part Number" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="80.0" text="Cost " textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="103.0" text="Charge " textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="80.0" text="Quanity" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="452.0" styleClass="TransparentScrollPanev2" stylesheets="@../../Styles/Application.css" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="PartCharges" prefHeight="160.0" prefWidth="433.0" spacing="8.0">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#00000080" height="32.0" offsetX="5.0" offsetY="5.0" radius="15.5" spread="0.47" width="32.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="285.0" prefHeight="180.0" prefWidth="528.0" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="291.0">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Labor:" wrappingWidth="79.4609375">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Label prefHeight="23.0" prefWidth="162.0" text="Hourly Rate" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="133.0" text="Hours" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="23.0" prefWidth="133.0" text="Cost" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="148.0" prefWidth="452.0" styleClass="TransparentScrollPanev2" stylesheets="@../../Styles/Application.css" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="LaborCharges" prefHeight="160.0" prefWidth="433.0" spacing="8.0">
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#00000080" height="32.0" offsetX="5.0" offsetY="5.0" radius="15.5" spread="0.47" width="32.0" />
+               </effect>
+               <VBox.margin>
+                  <Insets left="70.0" />
+               </VBox.margin>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <Text fill="WHITE" layoutX="16.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pickup / Delivery:" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="491.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="DeliveryCharge" fill="WHITE" layoutX="260.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ " AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="491.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bill Total:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="535.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="BillTotal" fill="WHITE" layoutX="143.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ " AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="535.0">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="21.0" layoutY="564.0" mnemonicParsing="false" onAction="#DownloadInvoice" prefHeight="35.0" prefWidth="244.0" text="Download Invoice" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="564.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="16.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Completed:" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="16.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Name:" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="JobName" fill="WHITE" layoutX="113.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the name" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="DateCompleted" fill="WHITE" layoutX="170.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11/8/2023" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

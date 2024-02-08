@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#GoToJob" prefHeight="65.0" prefWidth="787.0" spacing="8.0" styleClass="HoverablePane" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Jobs.Job">
+   <children>
+      <Text fx:id="CustomerName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name Here" wrappingWidth="252.13671875">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <TextArea id="name" fx:id="JobNameArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="175.0" promptText="this is a test" style="-fx-text-fill: white;" styleClass="TextAreaMoreInfo" stylesheets="@../../Styles/Application.css" text="this is a test" wrapText="true">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </TextArea>
+      <Text fx:id="StartEndDate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="11/16/23 - Current" wrappingWidth="237.13671875">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="StatusHover" prefHeight="65.0" prefWidth="54.0">
+         <children>
+            <Circle fx:id="Status" fill="#46ff1f" radius="18.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="StatusTip" contentDisplay="CENTER" layoutX="-91.0" prefHeight="23.0" prefWidth="109.0" style="-fx-background-color: black; -fx-background-radius: 10; -fx-text-fill: white;" text="Status " textAlignment="CENTER" AnchorPane.leftAnchor="-91.0">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets left="16.0" />
+   </padding>
+</HBox>

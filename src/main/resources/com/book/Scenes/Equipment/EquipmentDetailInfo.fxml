@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="Self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="584.0" style="-fx-background-color: #065143; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Equipment.EquipmentDetailInfo">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="584.0" spacing="8.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="567.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Model:">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="MachineModel" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the Model of the Machine">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="567.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Worked On:">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="LastWorkedOn" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="11/23/1998">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="570.0" spacing="8.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="285.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Model Notes:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="ModelNotes" prefHeight="130.0" prefWidth="285.0" style="-fx-text-fill: white; -fx-border-color: black;" styleClass="TextAreaMoreInfo" stylesheets="@../../Styles/Application.css" text="This is sample text" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </TextArea>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Machine Notes:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="MachineNotes" prefHeight="130.0" prefWidth="285.0" style="-fx-text-fill: white; -fx-border-color: black;" styleClass="TextAreaMoreInfo" stylesheets="@../../Styles/Application.css" text="This is sample text" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="278.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Compatible Parts:">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="274.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Part Number">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="16.0" />
+                                       </HBox.margin>
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" left="8.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In stock">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="24.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefViewportHeight="234.0" prefViewportWidth="274.0" prefWidth="274.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                                 <content>
+                                    <VBox fx:id="CompatiblePartsContainer" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="258.0" spacing="8.0">
+                                       <padding>
+                                          <Insets top="16.0" />
+                                       </padding></VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="568.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="175.0" prefWidth="568.0" spacing="8.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Parts Replaced">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="552.0" spacing="256.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Parts Replaced">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date Replaced">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <ScrollPane prefViewportHeight="84.0" prefViewportWidth="552.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                           <content>
+                              <VBox fx:id="PartReplacmentContainer" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="75.0" prefWidth="534.0" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+      <Button id="IconButton" layoutX="520.0" layoutY="10.0" mnemonicParsing="false" onAction="#Close" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+         <graphic>
+            <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" strokeWidth="2.0" />
+         </graphic>
+      </Button>
+   </children>
+</Pane>

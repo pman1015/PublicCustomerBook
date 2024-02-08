@@ -1,0 +1,311 @@
+.NavigationButton {
+    -fx-background-color: rgba(5, 57, 47, 1);
+    -fx-border-radius: 0px;
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-pref-height: 48;
+}
+
+.NavigationButton:hover {
+    -fx-background-color: rgb(14, 161, 132);
+}
+
+.BackButton {
+    -fx-background-color: rgba(9, 113, 94, 1);
+    -fx-padding: 2px;
+    -fx-font-size: 32px;
+    -fx-font-family: Verdana;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.BackButton:hover {
+    -fx-background-color: rgb(14, 161, 132);
+}
+
+.HeaderLabel {
+    -fx-font-family: Verdana;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.HeaderContainer {
+    -fx-arc-height: 10;
+    -fx-arc-width: 10;
+    -fx-fill: rgba(9, 113, 94, 1);
+}
+
+.HeaderButton {
+    -fx-font-family: Verdana;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(9, 113, 94, 1);
+    -fx-min-height: 24;
+    -fx-pref-height: 24;
+    -fx-max-height: 24;
+}
+
+.HeaderButton {
+    -fx-background-color: rgb(14, 161, 132);
+}
+
+.AddButton {
+    -fx-background-color: rgba(82, 81, 81, 0.651);
+}
+
+#AddButtonContainer:hover #AddButton {
+    -fx-fill: gray;
+}
+
+#CloseButtonContainer:hover #CloseButton {
+    -fx-fill: gray;
+}
+
+.GenericButton {
+    -fx-background-color: white;
+}
+
+.GenericButton:hover {
+    -fx-background-color: rgba(128, 128, 128, 0.416);
+}
+
+.GreenButton {
+    -fx-background-color: #10e222;
+    -fx-background-radius: 20;
+}
+
+.GreenButton:hover {
+    -fx-background-color: #096211;
+}
+
+.RedButton {
+    -fx-background-color: rgb(236, 10, 10);
+    -fx-background-radius: 20;
+}
+
+.RedButton:hover {
+    -fx-background-color: rgba(127, 25, 7, 0.685);
+}
+
+.IconButton {
+    -fx-background: #86868629;
+    -fx-background-color: #86868600;
+}
+
+#IconButton:hover #IconSVG {
+    -fx-fill: gray;
+}
+
+.Scrollbar {
+    -fx-background: rgb(84, 84, 84);
+    -fx-background-radius: 5;
+}
+
+.Scrollbar .scroll-bar:vertical {
+    -fx-background-color: rgba(9, 113, 94, 1);
+    -fx-max-width: 10px;
+    -fx-pref-width: 20px;
+}
+
+.Scrollbar .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(9, 224, 135, 0.685);
+}
+
+.MakeButton {
+    -fx-padding: 0;
+    -fx-background-color: rgba(9, 113, 94, 1);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.MakeButton:hover {
+    -fx-background-color: rgba(9, 224, 135, 0.685);
+}
+
+.EquipmentCard {
+    -fx-background-color: rgba(9, 113, 94, 1);
+    -fx-background-radius: 5;
+}
+
+.EquipmentCard:hover {
+    -fx-background-color: rgba(18, 189, 157, 1);
+    -fx-background-radius: 5;
+}
+
+.TransparentScrollPane {
+    -fx-background-color: #ffffff00;
+    -fx-border-color: #ffffff00;
+}
+
+.TransparentScrollPane .viewport {
+    -fx-background-color: #ffffff00;
+}
+
+.TransparentScrollPane .scroll-bar:vertical {
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(48, 48, 48, 0.418);
+}
+
+.TransparentScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(83, 83, 83, 0.418);
+}
+
+.TransparentScrollPanev2 {
+    -fx-background-color: #09715E;
+    -fx-border-color: #33323251;
+}
+
+.TransparentScrollPanev2 .viewport {
+    -fx-background-color: #ffffff00;
+}
+
+.TransparentScrollPanev2 .scroll-bar:vertical {
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(48, 48, 48, 0.418);
+}
+
+.TransparentScrollPanev2 .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(83, 83, 83, 0.418);
+}
+
+.EquiptmentPartCard {
+    -fx-background-color: white;
+    -fx-background-radius: 5;
+}
+
+.EquiptmentPartCard:hover {
+    -fx-background-color: rgb(143, 143, 143);
+}
+
+.NewOldToggle .toggle-button:selected {
+    -fx-background-color: rgba(9, 113, 94, 1);
+}
+
+.TextAreaMoreInfo .content {
+    -fx-background-color: #ffffff00;
+}
+
+.TextAreaMoreInfo .scroll-pane .viewport {
+    -fx-background-color: #ffffff00;
+}
+
+.TextAreaMoreInfo {
+    -fx-background-color: #ffffff00;
+}
+
+.TextAreaMoreInfo {
+    -fx-text-fill: black;
+}
+
+.TextAreaMoreInfo .text {
+    -fx-text-fill: white;
+}
+
+.HoverablePane {
+    -fx-background-color: #09715e;
+    -fx-background-radius: 5;
+}
+
+.HoverablePane:hover {
+    -fx-background-color: #10a88c;
+}
+
+.TransparentButton {
+    -fx-background-color: #ffffff00;
+}
+
+.TransparentButton:hover #SVG {
+    -fx-fill: rgb(148, 145, 145);
+}
+
+.TransparentButtonNoSVG {
+    -fx-background-color: #ffffff00;
+}
+
+.TransparentButtonNoSVG:hover {
+    -fx-background-color: gray;
+}
+
+.TextField {
+    -fx-font-family: Verdana;
+    -fx-font-size: 12px;
+    -fx-font-style: Regular;
+}
+
+.TransparentChoiceBox {
+    -fx-background-color: #6e6e6e2e;
+}
+
+.TransparentChoiceBox .label {
+    -fx-font-size: 12px;
+    -fx-font-family: Verdana;
+}
+
+.TransparentChoiceBox .context-menu {
+    -fx-background-color: black;
+}
+
+.TransparentChoiceBox .menu-item:focused {
+    -fx-background-color: #09715e;
+}
+
+.TransparentTextField {
+    -fx-background-color: #ffffff00;
+    -fx-font-size: 12px;
+    -fx-font-family: Verana;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+}
+
+.ComboBox {
+    -fx-font-size: 12px;
+    -fx-font-family: Verana;
+}
+
+.toggleBottonFalse {
+    -fx-background-radius: 25;
+    -fx-background-color: #ffffff00;
+}
+
+.toggleBottonFalse:selected {
+    -fx-background-radius: 25;
+    -fx-background-color: gray;
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+}
+
+.toggleButton {
+    -fx-background-radius: 25;
+    -fx-background-color: #ffffff00;
+}
+
+.toggleButton:selected {
+    -fx-background-color: rgb(3, 210, 3);
+    -fx-border-color: black;
+    -fx-border-radius: 25;
+}
+
+.toggleSwitchContainerTrue {
+    -fx-background-color: green;
+    -fx-background-radius: 25;
+}
+
+.toggleSwitchContainerFalse {
+    -fx-background-color: #ffffff00;
+    -fx-background-radius: 25;
+    -fx-border-color: gray;
+    -fx-border-radius: 25;
+}
+
+.warning {
+    -fx-arc-height: 10;
+    -fx-arc-width: 10;
+}
+
+.errorText {
+    -fx-font-size: 12px;
+    -fx-font-family: Verdana;
+    -fx-text-fill: red;
+}

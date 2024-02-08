@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-view-order: 5;" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Customer.CustomerCreate">
+   <children>
+      <Pane layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="450.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="41.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="450.0" spacing="8.0">
+               <children>
+                  <Text stroke="BLACK" strokeLineCap="BUTT" strokeLineJoin="BEVEL" strokeType="INSIDE" strokeWidth="0.0" text="Create New Customer" textAlignment="CENTER" wrappingWidth="500.0">
+                     <font>
+                        <Font name="Verdana Bold" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="16.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="74.6796875">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="CustomerName" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="283.0" promptText="Customer Name" styleClass="TextField" AnchorPane.leftAnchor="0.0" />
+                              <Label fx:id="NameError" layoutX="7.0" layoutY="26.0" prefHeight="17.0" prefWidth="274.0" styleClass="errorText" text="Label" textFill="RED" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alias:" wrappingWidth="65.5458984375">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="Alias" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="295.0" promptText="Alias of customer" styleClass="TextField" />
+                              <Label fx:id="AliasError" layoutY="25.0" prefHeight="17.0" prefWidth="292.0" styleClass="errorText" text="Label" textFill="RED" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="91.068359375">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="Address" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="263.0" promptText="Address of customer" styleClass="TextField" />
+                              <Label fx:id="AddressError" layoutX="4.0" layoutY="23.0" prefHeight="17.0" prefWidth="256.0" styleClass="errorText" text="Label" textFill="RED" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number:" wrappingWidth="148.5458984375">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="PhoneNumber" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="216.0" promptText="Customer Phone Number" styleClass="TextField" />
+                              <Label fx:id="PhoneNumberError" layoutY="26.0" prefHeight="17.0" prefWidth="216.0" styleClass="errorText" text="Label" textFill="RED" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="500.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="Notes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="292.0" promptText="Any Notes about the customer" wrapText="true">
+                           <styleClass>
+                              <String fx:value="TransparentScrollPane" />
+                              <String fx:value="TextField" />
+                           </styleClass>
+                        </TextArea>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button id="AcceptCustomerChanges" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Create" prefHeight="25.0" prefWidth="200.0" styleClass="GreenButton" stylesheets="@../../Styles/Application.css" textAlignment="CENTER">
+                           <effect>
+                              <InnerShadow choke="0.35" color="#099a13" height="44.72" radius="33.72" width="92.16" />
+                           </effect>
+                           <font>
+                              <Font name="Verdana" size="15.0" />
+                           </font>
+                           <graphic>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create">
+                                 <font>
+                                    <Font name="Verdana" size="20.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Cancel" prefHeight="25.0" prefWidth="200.0" styleClass="RedButton" stylesheets="@../../Styles/Application.css">
+                           <effect>
+                              <InnerShadow choke="0.29" color="#800202" height="82.53" radius="43.915" width="95.13" />
+                           </effect>
+                           <graphic>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cancel">
+                                 <font>
+                                    <Font name="Verdana" size="20.0" />
+                                 </font>
+                              </Text>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="24.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

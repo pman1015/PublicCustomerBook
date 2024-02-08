@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#JobSelected" prefHeight="64.0" prefWidth="800.0" styleClass="HoverablePane" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Jobs.JobHistoryCard">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="800.0" spacing="4.0">
+         <children>
+            <Text fx:id="JobName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="218.119140625">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="JobDescription" editable="false" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="240.0" style="-fx-text-fill: white;" text="With its advanced componWith its advanced components and AIO liquid cooling, the Player: Two Prime PC delivers seamless performance and caWith its advanced components and AIO liquid cooling, the Player: Two Prime PC delivers seamless performance and caents and AIO liquid cooling, the Player: Two Prime PC delivers seamless performance and can handle demanding productivity or content creation tasks.NVIDIA® GeForce RTX™ 4070TiUp to AMD Ryzen™ 9 5950XUp to 64GB RAMUp to 4TB Storage spacePlay games on ultra settings - 1440p gamingReal-time ray tracing technologyBuilt in an H5 EliteAIO liquid cooled with NZXT Kraken 240 RGBExcellent gaming benchmarksPCIe Gen 4 Support - AM4 compatibleOverclockableComponents may vary from images shown." wrapText="true">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="TextAreaMoreInfo" />
+                  <String fx:value="TransparentScrollPane" />
+               </styleClass>
+            </TextArea>
+            <Text fx:id="StartEndDate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="11/16/23 - Current" wrappingWidth="242.119140625">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Text>
+            <Circle fx:id="StatusIndicator" fill="DODGERBLUE" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

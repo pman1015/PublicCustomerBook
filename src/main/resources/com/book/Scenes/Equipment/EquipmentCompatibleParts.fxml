@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="543.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="543.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Model Name:">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The Model name of the lawn mower " wrappingWidth="375.806640625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Compatible Parts:">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="8.0" />
+         </VBox.margin>
+      </Text>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="527.0" spacing="10.0" style="-fx-background-color: #065143; -fx-background-radius: 10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="524.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Number" wrappingWidth="171.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Number in inventory" wrappingWidth="288.5546875">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Pane id="AddButtonContainer" prefHeight="34.0" prefWidth="37.0" styleClass="AddButtonContainer">
+                     <children>
+                        <SVGPath id="AddButton" content="M256,512C114.625,512,0,397.391,0,256C0,114.609,114.625,0,256,0c141.391,0,256,114.609,256,256  C512,397.391,397.391,512,256,512z M256,64C149.969,64,64,149.969,64,256s85.969,192,192,192c106.047,0,192-85.969,192-192  S362.047,64,256,64z M288,384h-64v-96h-96v-64h96v-96h64v96h96v64h-96V384z" fill="WHITE" scaleX="0.0781" scaleY="0.0781" translateX="-238.0" translateY="-238.0" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" prefViewportHeight="200.0" prefViewportWidth="511.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+               <content>
+                  <VBox prefHeight="197.0" prefWidth="495.0" />
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+         <VBox.margin>
+            <Insets left="8.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

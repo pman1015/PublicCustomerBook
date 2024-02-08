@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="InventoryDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Inventory.InventoryPartDetail">
+   <children>
+      <Pane layoutX="7.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="-12.0" layoutY="-8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@../../Styles/Application.css">
+               <children>
+                  <Button id="IconButton" layoutX="357.0" layoutY="12.0" mnemonicParsing="false" onAction="#CloseWindow" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                     <graphic>
+                        <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" strokeWidth="2.0" />
+                     </graphic>
+                  </Button>
+                  <Text layoutX="58.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Details" AnchorPane.leftAnchor="58.0">
+                     <font>
+                        <Font name="Verdana Bold" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="32.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Number:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="69.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="196.0" layoutY="73.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="195.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="73.0">
+                     <children>
+                        <Label fx:id="PartNumber" prefHeight="25.0" prefWidth="200.0" text="Part number goes here">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="PartNumberEdit" alignment="TOP_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="210.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Text fx:id="PartNumberError" fill="RED" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="32.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Price:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="119.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="218.0" layoutY="122.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="178.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="123.0">
+                     <children>
+                        <Label fx:id="PurchasePrice" prefHeight="25.0" prefWidth="200.0" text="Part number goes here">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane prefHeight="50.0">
+                           <children>
+                              <TextField fx:id="PurchasePriceEdit" alignment="TOP_LEFT" prefHeight="25.0" prefWidth="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Text fx:id="PurchasePriceError" fill="RED" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="24.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="32.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Retail Price:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="169.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="218.0" layoutY="173.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="219.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="173.0">
+                     <children>
+                        <Label fx:id="RetailPrice" prefHeight="25.0" prefWidth="200.0" text="Part number goes here">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="219.0">
+                           <children>
+                              <TextField fx:id="RetailPriceEdit" alignment="TOP_LEFT" layoutY="2.0" prefHeight="25.0" prefWidth="219.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Text fx:id="RetailPriceError" fill="RED" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="24.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="32.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In Stock:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="219.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="218.0" layoutY="223.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="251.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="223.0">
+                     <children>
+                        <Label fx:id="Stock" prefHeight="25.0" prefWidth="200.0" text="Part number goes here">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="219.0">
+                           <children>
+                              <TextField fx:id="StockEdit" alignment="TOP_LEFT" layoutY="2.0" prefHeight="25.0" prefWidth="251.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Text fx:id="StockError" fill="RED" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="24.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="33.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase URL:" AnchorPane.topAnchor="269.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="219.0" layoutY="267.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="178.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="269.0">
+                     <children>
+                        <Label fx:id="URL" prefHeight="29.0" prefWidth="175.0" text="Part number goes here" wrapText="true">
+                           <font>
+                              <Font name="Verdana" size="12.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="219.0">
+                           <children>
+                              <TextField fx:id="URLEdit" alignment="TOP_LEFT" layoutY="2.0" prefHeight="25.0" prefWidth="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+                              <Text fx:id="URLError" fill="RED" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="149.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="33.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expense Category:">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </Text>
+                  <StackPane alignment="TOP_LEFT" layoutX="262.0" layoutY="320.0" prefHeight="56.0" prefWidth="175.0" AnchorPane.rightAnchor="3.0">
+                     <children>
+                        <Label fx:id="CategoryLabel" prefHeight="23.0" prefWidth="175.0" text="Label">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets top="5.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <AnchorPane fx:id="ExpenseTextFieldPane">
+                           <children>
+                              <TextField fx:id="ExpenseTextField" prefHeight="29.0" prefWidth="175.0" AnchorPane.topAnchor="3.0" />
+                              <Text fx:id="ExpenseTextFieldError" fill="RED" layoutX="3.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ExpenseComboBoxPane">
+                           <children>
+                              <ComboBox fx:id="ExpenseComboBox" editable="true" prefHeight="34.0" prefWidth="175.0" promptText="Category" styleClass="ComboBox" />
+                              <Text fx:id="ExpenseComboBoxError" fill="RED" layoutX="3.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <Text layoutX="32.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promotional Prices" AnchorPane.topAnchor="373.87109375">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button id="IconButton" layoutX="259.0" layoutY="376.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CreatePromotionalPrice" prefHeight="24.0" prefWidth="24.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css" AnchorPane.topAnchor="378.0">
+                     <graphic>
+                        <SVGPath id="IconSVG" content="M256,512C114.625,512,0,397.391,0,256C0,114.609,114.625,0,256,0c141.391,0,256,114.609,256,256  C512,397.391,397.391,512,256,512z M256,64C149.969,64,64,149.969,64,256s85.969,192,192,192c106.047,0,192-85.969,192-192  S362.047,64,256,64z M288,384h-64v-96h-96v-64h96v-96h64v96h96v64h-96V384z" scaleX="0.046875" scaleY="0.046875" />
+                     </graphic>
+                  </Button>
+                  <ScrollPane layoutX="32.0" layoutY="420.0" prefHeight="103.0" prefWidth="251.0" style="-fx-border-color: gray; -fx-border-radius: 0 0 5 5;" styleClass="TransparentScrollPane" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="420.0">
+                     <content>
+                        <VBox fx:id="PromotionalPriceContainer" prefHeight="95.0" prefWidth="230.0" />
+                     </content>
+                  </ScrollPane>
+                  <HBox layoutX="13.0" layoutY="523.0" prefHeight="71.0" prefWidth="400.0" AnchorPane.topAnchor="523.0">
+                     <children>
+                        <StackPane prefHeight="80.0" prefWidth="400.0">
+                           <children>
+                              <Button fx:id="Edit" mnemonicParsing="false" onAction="#EditPartDetails" prefHeight="46.0" prefWidth="240.0" styleClass="GreenButton" text="Edit" visible="false">
+                                 <font>
+                                    <Font name="Verdana" size="24.0" />
+                                 </font>
+                              </Button>
+                              <HBox fx:id="EditOptions" alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="240.0" spacing="20.0">
+                                 <children>
+                                    <Button fx:id="Confirm" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ConfirmPartEdit" prefHeight="50.0" prefWidth="110.0" styleClass="GreenButton" text="Confirm" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="Cancel" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CancelPartEdit" prefHeight="50.0" prefWidth="110.0" styleClass="RedButton" text="Cancel" textAlignment="CENTER">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="ToggleContainer" alignment="CENTER" layoutX="44.0" layoutY="348.0" spacing="5.0" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="348.0">
+                     <children>
+                        <Text layoutX="44.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Existing">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </Text>
+                        <HBox fx:id="CategoryToggleContainer" alignment="CENTER" layoutX="100.0" layoutY="348.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="50.0" spacing="5.0" styleClass="toggleSwitchContainerFalse">
+                           <children>
+                              <ToggleButton id="ToggleFalse" fx:id="CategoryToggleFalse" layoutX="61.0" layoutY="349.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ExpenseCategoryToggle" prefHeight="25.0" prefWidth="24.0" selected="true" styleClass="toggleBottonFalse">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="CategoryToggle" />
+                                 </toggleGroup>
+                              </ToggleButton>
+                              <ToggleButton id="ToggleTrue" fx:id="CategoryToggleTrue" layoutX="93.0" layoutY="349.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ExpenseCategoryToggle" prefHeight="25.0" prefWidth="24.0" styleClass="toggleButton" toggleGroup="$CategoryToggle" />
+                           </children>
+                        </HBox>
+                        <Text layoutX="158.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="353.0">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="403.0" prefHeight="17.0" prefWidth="251.0" style="-fx-border-color: gray; -fx-border-radius: 5 5 0 0;" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="403.0">
+                     <children>
+                        <Label layoutX="44.0" layoutY="403.0" text="Count" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="403.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="120.0" layoutY="403.0" text="Price">
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="194.0" layoutY="403.0" text="Charge">
+                           <padding>
+                              <Insets left="50.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="PromotionalPricePane" layoutX="24.0" prefHeight="330.0" prefWidth="400.0" style="-fx-background-color: #09715E; -fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 5; -fx-background-radius: 5;" stylesheets="@../../Styles/Application.css" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <AnchorPane prefHeight="330.0" prefWidth="401.0">
+               <children>
+                  <Text fill="WHITE" layoutX="95.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promotional Price" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="27.0">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button id="IconButton" layoutX="333.0" layoutY="14.0" mnemonicParsing="false" onAction="#ClosePromo" styleClass="IconButton" stylesheets="@../../Styles/Application.css" textFill="WHITE">
+                     <graphic>
+                        <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" fill="WHITE" strokeWidth="2.0" />
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" layoutX="31.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Price:" wrappingWidth="163.8984375" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="78.0">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="191.52734375" layoutY="78.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0">
+                     <children>
+                        <TextField fx:id="PromoPurchasePriceEdit" prefHeight="25.0" prefWidth="178.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="PromoPurchasePriceError" fill="RED" layoutX="17.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="178.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="205.52734375" layoutY="125.0" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" AnchorPane.topAnchor="137.0">
+                     <children>
+                        <TextField fx:id="PromoQuanityEdit" prefHeight="25.0" prefWidth="164.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="PromoQuanityError" fill="RED" layoutX="-70.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="163.8984375" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="WHITE" layoutX="34.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quanity Bought:" wrappingWidth="175.7578125" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="135.0">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </Text>
+                  <AnchorPane layoutX="205.52734375" layoutY="175.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" AnchorPane.topAnchor="197.0">
+                     <children>
+                        <TextField fx:id="PromoChargeEdit" layoutY="2.0" prefHeight="25.0" prefWidth="164.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="0.0" />
+                        <Text fx:id="PromoChargeError" fill="RED" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="163.8984375" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="WHITE" layoutX="31.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altered Charge:" wrappingWidth="175.7578125" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="195.0">
+                     <font>
+                        <Font name="Verdana" size="20.0" />
+                     </font>
+                  </Text>
+                  <StackPane layoutX="107.0" layoutY="245.0" AnchorPane.topAnchor="255.0">
+                     <children>
+                        <Button fx:id="AddPromotion" layoutX="107.0" layoutY="245.0" mnemonicParsing="false" onAction="#AddPromotion" prefHeight="50.0" prefWidth="200.0" styleClass="GreenButton" text="Add Price" visible="false" />
+                        <Button fx:id="UpdatePromotion" mnemonicParsing="false" onAction="#UpdateExistingPromotion" prefHeight="50.0" prefWidth="200.0" styleClass="GreenButton" text="Update Promotion">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" stylesheets="@../../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Bills.BillsLoader">
+   <children>
+      <AnchorPane fx:id="LeftSideContent" layoutX="14.0" layoutY="8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="400.0" />
+      <AnchorPane fx:id="RightSideContent" layoutX="414.0" layoutY="8.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="610.0" prefWidth="583.0" />
+   </children>
+</Pane>

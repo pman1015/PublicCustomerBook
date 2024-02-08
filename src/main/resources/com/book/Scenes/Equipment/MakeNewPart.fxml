@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="603.0" prefWidth="570.0" style="-fx-background-color: #ffffff00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentPageMakePart">
+   <children>
+      <Pane layoutX="26.0" layoutY="71.0" prefHeight="343.0" prefWidth="520.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="335.0" prefWidth="504.0">
+               <children>
+                  <Text layoutX="98.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Make A New Part">
+                     <font>
+                        <Font name="Verdana" size="36.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="49.0" layoutY="87.0" prefHeight="159.0" prefWidth="406.0" spacing="12.0">
+                     <children>
+                        <HBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="32.0">
+                           <children>
+                              <Text layoutX="71.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Part Number:">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane prefHeight="35.0" prefWidth="286.0">
+                                 <children>
+                                    <TextField fx:id="PartNumber" prefHeight="25.0" prefWidth="308.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Text fx:id="PartNumberError" fill="RED" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="300.13671875" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="28.05078125" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="32.0">
+                           <children>
+                              <Text layoutX="54.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Price:">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane prefHeight="52.0" prefWidth="286.0">
+                                 <children>
+                                    <TextField fx:id="PurchasePrice" prefHeight="25.0" prefWidth="286.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Text fx:id="PurchasePriceError" fill="RED" layoutX="6.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="300.13671875" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="28.05078125" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0">
+                           <children>
+                              <Text layoutX="71.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Charge Price:">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane>
+                                 <children>
+                                    <TextField fx:id="ChargePrice" prefHeight="25.0" prefWidth="308.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Text fx:id="ChargePriceError" fill="RED" layoutX="4.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="300.13671875" AnchorPane.bottomAnchor="0.94921875" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="24.05078125" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <AnchorPane prefHeight="41.0" prefWidth="139.0">
+                                 <children>
+                                    <Text layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase URL:">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text layoutX="66.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(optional)" wrappingWidth="59.056640625">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="41.0" prefWidth="295.0">
+                                 <children>
+                                    <TextField fx:id="PurchaseURL" prefHeight="25.0" prefWidth="293.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button id="IconButton" layoutX="451.0" mnemonicParsing="false" onAction="#Close" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                     <graphic>
+                        <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="152.0" layoutY="275.0" mnemonicParsing="false" onAction="#AddNewPart" prefHeight="25.0" prefWidth="200.0" styleClass="GreenButton" stylesheets="@../../Styles/Application.css" text="Add Part">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

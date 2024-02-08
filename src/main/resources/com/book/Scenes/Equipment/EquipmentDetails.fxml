@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" stylesheets="@../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentDetailLoader">
+   <children>
+      <HBox fx:id="MainContentContainer" layoutX="1.0" prefHeight="626.0" prefWidth="1000.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="400.0">
+               <children>
+                  <HBox spacing="8.0">
+                     <children>
+                        <Button id="GenericButton" fx:id="BackButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="56.0" prefWidth="161.0" styleClass="GenericButton" stylesheets="@../../Styles/Application.css" text="BackButton">
+                           <font>
+                              <Font name="Verdana" size="32.0" />
+                           </font>
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <SVGPath content="M 24.998 40.094 c 1.338 1.352 1.338 3.541 0 4.893 c -1.338 1.35 -3.506 1.352 -4.846 0 L 1.004 25.447 c -1.338 -1.352 -1.338 -3.543 0 -4.895 L 20.152 1.014 c 1.34 -1.352 3.506 -1.352 4.846 0 c 1.338 1.352 1.338 3.541 0 4.893 L 9.295 23 L 24.998 40.094 Z" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                                       <font>
+                                          <Font name="Verdana" size="32.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        <Pane prefHeight="58.0" prefWidth="224.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                           <children>
+                              <Text layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment Details" textAlignment="CENTER" wrappingWidth="208.87109375">
+                                 <font>
+                                    <Font name="Verdana" size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="LeftContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="384.0">
+                     <children>
+                        <Pane fx:id="List" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="384.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 4; -fx-background-radius: 5;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="7.0">
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="544.0" prefWidth="384.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="200.0" spacing="16.0" style="-fx-background-color: #065143; -fx-background-radius: 5;">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Model">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Worked on">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Button id="Add" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addEquipment" prefHeight="48.0" prefWidth="48.0" styleClass="TransparentButton" stylesheets="@../../Styles/Application.css" text="Button">
+                                             <graphic>
+                                                <SVGPath id="SVG" content="M256,512C114.625,512,0,397.391,0,256C0,114.609,114.625,0,256,0c141.391,0,256,114.609,256,256  C512,397.391,397.391,512,256,512z M256,64C149.969,64,64,149.969,64,256s85.969,192,192,192c106.047,0,192-85.969,192-192  S362.047,64,256,64z M288,384h-64v-96h-96v-64h96v-96h64v96h96v64h-96V384z" scaleX="0.09375" scaleY="0.09375" />
+                                             </graphic>
+                                             <padding>
+                                                <Insets right="512.0" />
+                                             </padding>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding>
+                                    </HBox>
+                                    <ScrollPane hbarPolicy="NEVER" prefViewportHeight="480.0" prefViewportWidth="384.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                                       <content>
+                                          <VBox fx:id="EquipmentCardHolder" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="365.0" spacing="8.0">
+                                             <padding>
+                                                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                             </padding>
+                                          </VBox>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding>
+            </VBox>
+            <Pane>
+               <children>
+                  <AnchorPane fx:id="RightContent" layoutX="2.0" layoutY="8.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="600.0" prefWidth="582.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</Pane>

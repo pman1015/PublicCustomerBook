@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="180.0" prefWidth="480.0" style="-fx-background-color: white; -fx-background-radius: 5;" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentDetailsAddEquipment">
+   <children>
+      <VBox prefHeight="180.0" prefWidth="480.0" spacing="16.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add Equipment">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button id="IconButton" mnemonicParsing="false" onAction="#Close" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                     <graphic>
+                        <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" strokeWidth="2.0" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="464.0" spacing="16.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Model Number">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="ModelNumbers" prefWidth="150.0" styleClass="ComboBox" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AddEquipment" prefHeight="25.0" prefWidth="191.0" styleClass="GreenButton" text="Add Equipment">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" stylesheets="@../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Customer.MoreInfoLoader">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="-4.0" prefHeight="626.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="965.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <Button id="GenericButton" fx:id="BackButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="56.0" prefWidth="161.0" styleClass="GenericButton" stylesheets="@../../Styles/Application.css" text="BackButton">
+                     <font>
+                        <Font name="Verdana" size="32.0" />
+                     </font>
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <SVGPath content="M 24.998 40.094 c 1.338 1.352 1.338 3.541 0 4.893 c -1.338 1.35 -3.506 1.352 -4.846 0 L 1.004 25.447 c -1.338 -1.352 -1.338 -3.543 0 -4.895 L 20.152 1.014 c 1.34 -1.352 3.506 -1.352 4.846 0 c 1.338 1.352 1.338 3.541 0 4.893 L 9.295 23 L 24.998 40.094 Z" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                                 <font>
+                                    <Font name="Verdana" size="32.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button id="JobHistoryButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#JobHistory" prefHeight="56.0" prefWidth="256.0" styleClass="GenericButton" stylesheets="@../../Styles/Application.css" text="JobHistoryButton">
+                     <font>
+                        <Font name="Verdana" size="32.0" />
+                     </font>
+                     <graphic>
+                        <HBox>
+                           <children>
+                              <SVGPath content="M 10.5 0 C 7 0 3.9 1.9 2.3 4.8 L 0 2.5 L 0 9 L 6.5 9 L 3.7 6.2 C 5 3.7 7.5 2 10.5 2 C 14.6 2 18 5.4 18 9.5 C 18 13.6 14.6 17 10.5 17 C 7.2 17 4.5 14.9 3.4 12 L 1.3 12 C 2.4 16 6.1 19 10.5 19 C 15.8 19 20 14.7 20 9.5 C 20 4.3 15.7 0 10.5 0 L 10.5 0 Z M 9 5 L 9 10.1 L 13.7 12.9 L 14.5 11.6 L 10.5 9.2 L 10.5 5 L 9 5 L 9 5 Z" scaleX="3.0" scaleY="3.0">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </SVGPath>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="JobHistory">
+                                 <font>
+                                    <Font name="Verdana" size="32.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="24.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                  <Button id="JobHistoryButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#EquipmentDetails" prefHeight="56.0" prefWidth="384.0" styleClass="GenericButton" stylesheets="@../../Styles/Application.css" text="Equipment Details">
+                     <font>
+                        <Font name="Verdana" size="32.0" />
+                     </font>
+                     <graphic>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="384.0">
+                           <children>
+                              <SVGPath content="M 487.428 385.246 c -0.352 -0.52 -0.715 -1.03 -1.091 -1.531 c -7.129 -9.527 -18.501 -15.704 -31.288 -15.704 h -58.813 v -12.204 h 34.976 h 12 h 17.836 V 254.965 l -17.836 -13.694 V 106.31 h -9.03 V 68.599 h -36.028 v 37.711 h -80.56 L 244.04 229.402 v 73.661 h -24.909 v 21.46 h -5.9 l 13.546 -146.446 c 0.104 -1.116 0.128 -2.23 0.093 -3.34 c 0.047 -1.675 -0.053 -3.361 -0.321 -5.037 c -1.207 -7.527 -5.555 -14.238 -11.926 -18.412 L 100.971 76.775 c -1.132 -1.516 -2.426 -2.921 -3.87 -4.184 c -5.737 -5.019 -13.374 -7.407 -20.944 -6.545 c -7.573 0.858 -14.479 4.893 -18.947 11.066 c -4.468 6.175 -6.141 13.996 -4.588 21.458 l 19.67 94.54 l -54.397 51.438 l 50.218 42.335 l 4.605 35.407 l 23.934 -3.113 l 72.345 -60.86 l -3.265 -25.104 l -0.063 0.007 l -2.456 -17.388 l -11.882 1.678 l 2.412 17.078 l -44.326 5.087 l -2.416 -117.003 l 66.452 63.762 l 13.022 140.791 c -4.152 2.822 -6.887 7.583 -6.887 12.971 c 0 8.642 7.031 15.673 15.673 15.673 h 42.779 v -0.062 h 6.001 h 12 h 34.975 v 12.204 h -59.517 c -12.787 0 -24.159 6.177 -31.288 15.704 c -0.376 0.501 -0.739 1.012 -1.091 1.531 c -1.756 2.598 -3.209 5.417 -4.306 8.407 c -1.535 4.186 -2.374 8.704 -2.374 13.416 c 0 4.711 0.839 9.229 2.374 13.415 c 1.097 2.989 2.55 5.809 4.306 8.407 c 0.352 0.52 0.715 1.03 1.091 1.531 c 7.129 9.526 18.501 15.704 31.288 15.704 h 223.551 c 12.787 0 24.159 -6.178 31.288 -15.704 c 0.376 -0.501 0.739 -1.012 1.091 -1.531 c 1.404 -2.078 2.615 -4.299 3.604 -6.635 c 1.979 -4.671 3.074 -9.804 3.074 -15.188 c 0 -5.385 -1.095 -10.518 -3.074 -15.189 C 490.043 389.545 488.832 387.324 487.428 385.246 Z M 455.048 434.127 c -14.92 0 -27.058 -12.138 -27.058 -27.058 s 12.138 -27.059 27.058 -27.059 c 9.792 0 18.385 5.228 23.136 13.038 c 2.488 4.092 3.923 8.892 3.923 14.021 c 0 5.128 -1.435 9.929 -3.923 14.02 C 473.433 428.899 464.84 434.127 455.048 434.127 Z M 208.362 421.089 c -2.488 -4.091 -3.923 -8.892 -3.923 -14.02 c 0 -5.129 1.435 -9.929 3.923 -14.021 c 4.751 -7.811 13.345 -13.038 23.136 -13.038 c 14.92 0 27.059 12.139 27.059 27.059 s -12.139 27.058 -27.059 27.058 C 221.707 434.127 213.113 428.899 208.362 421.089 Z M 269.324 397.316 h 7.584 c -1.42 2.869 -2.241 6.086 -2.241 9.499 c 0 3.412 0.82 6.629 2.241 9.498 h -7.467 c 0.723 -2.966 1.115 -6.06 1.115 -9.244 C 270.557 403.703 270.129 400.435 269.324 397.316 Z M 417.105 416.313 h -8.08 c 1.421 -2.869 2.24 -6.086 2.24 -9.498 c 0 -3.413 -0.819 -6.63 -2.24 -9.499 h 8.197 c -0.805 3.118 -1.232 6.387 -1.232 9.753 C 415.99 410.254 416.382 413.348 417.105 416.313 Z M 399.266 406.815 c 0 5.237 -4.26 9.498 -9.497 9.498 s -9.499 -4.261 -9.499 -9.498 s 4.262 -9.499 9.499 -9.499 S 399.266 401.578 399.266 406.815 Z M 370.511 416.313 h -7.979 c 1.42 -2.869 2.24 -6.086 2.24 -9.498 c 0 -3.413 -0.82 -6.63 -2.241 -9.499 h 7.981 c -1.422 2.869 -2.242 6.086 -2.242 9.499 C 368.27 410.228 369.09 413.444 370.511 416.313 Z M 352.771 406.815 c 0 5.237 -4.261 9.498 -9.498 9.498 s -9.499 -4.261 -9.499 -9.498 s 4.262 -9.499 9.499 -9.499 S 352.771 401.578 352.771 406.815 Z M 324.016 416.313 h -8.593 c 1.421 -2.869 2.241 -6.086 2.241 -9.498 c 0 -3.413 -0.82 -6.63 -2.242 -9.499 h 8.594 c -1.42 2.869 -2.241 6.086 -2.241 9.499 C 321.774 410.228 322.595 413.444 324.016 416.313 Z M 305.664 406.815 c 0 5.237 -4.261 9.498 -9.498 9.498 s -9.499 -4.261 -9.499 -9.498 s 4.262 -9.499 9.499 -9.499 S 305.664 401.578 305.664 406.815 Z M 264.248 428.313 h 158.051 c 1.356 2.083 2.904 4.028 4.622 5.813 H 259.625 C 261.343 432.342 262.892 430.396 264.248 428.313 Z M 449.048 260.882 v 82.925 h -5.836 v -87.406 L 449.048 260.882 Z M 422.182 80.599 v 8.116 h -12.028 v -8.116 H 422.182 Z M 410.153 100.715 h 12.028 v 5.595 h -12.028 V 100.715 Z M 184.627 176.971 c -0.398 -4.299 0.985 -8.424 3.895 -11.614 c 2.908 -3.19 6.888 -4.947 11.205 -4.947 s 8.297 1.757 11.206 4.947 c 2.441 2.678 3.792 6.017 3.933 9.562 c -0.176 3.088 -1.291 6.035 -3.278 8.529 c -2.896 3.636 -7.222 5.722 -11.869 5.722 c -3.923 0 -7.647 -1.501 -10.487 -4.225 l -4.242 -4.071 L 184.627 176.971 Z M 199.718 201.169 c 4.698 0 9.212 -1.191 13.186 -3.398 l -11.725 126.751 h -2.903 L 186.55 197.757 C 190.542 199.979 195.05 201.169 199.718 201.169 Z M 66.931 84.148 c 2.531 -3.497 6.287 -5.691 10.577 -6.178 c 0.591 -0.067 1.178 -0.101 1.761 -0.101 c 3.654 0 7.129 1.303 9.932 3.754 c 3.25 2.843 5.088 6.785 5.178 11.102 l 3.06 148.148 l -2.886 0.327 L 64.37 96.127 C 63.49 91.9 64.399 87.646 66.931 84.148 Z M 91.616 307.732 l -8.548 1.111 l -6.928 -53.271 l 79.215 -9.09 l 0.895 6.875 L 91.616 307.732 Z M 62.67 245.04 l 3.149 24.217 l -29.917 -25.222 l 39.26 -37.123 l 7.456 35.839 L 62.67 245.04 Z M 106.421 94.697 l 84.295 55.266 c -4.193 1.478 -8.014 3.966 -11.062 7.31 c -3.199 3.508 -5.391 7.772 -6.42 12.324 l -66.586 -63.891 L 106.421 94.697 Z M 191.587 340.195 c 0 -2.025 1.647 -3.673 3.673 -3.673 h 16.86 h 7.011 v 7.346 H 195.26 C 193.234 343.868 191.587 342.221 191.587 340.195 Z M 244.04 343.807 h -6.001 v -19.284 h -6.908 v -9.46 h 12.909 V 343.807 Z M 256.04 343.807 v -7.346 h 31.393 v -12 H 256.04 v -21.398 v -70.348 l 68.362 -114.404 h 73.751 h 33.059 v 113.749 v 92.402 H 302.227 v 12 h 128.985 v 7.346 h -34.976 H 291.015 H 256.04 Z M 303.015 355.807 h 81.222 v 12.204 h -81.222 V 355.807 Z M 396.236 380.011 h 30.685 c -1.578 1.64 -3.021 3.411 -4.296 5.306 H 263.922 c -1.275 -1.895 -2.719 -3.666 -4.297 -5.306 h 31.39 H 396.236 Z" scaleX="0.125" scaleY="0.125" translateX="224.0">
+                                 <HBox.margin>
+                                    <Insets left="-448.0" />
+                                 </HBox.margin>
+                              </SVGPath>
+                              <SVGPath content="M 455.048 389.514 c -9.681 0 -17.556 7.875 -17.556 17.556 s 7.875 17.556 17.556 17.556 s 17.556 -7.875 17.556 -17.556 S 464.729 389.514 455.048 389.514 Z M 455.048 412.625 c -3.063 0 -5.556 -2.492 -5.556 -5.556 s 2.493 -5.556 5.556 -5.556 c 3.063 0 5.556 2.492 5.556 5.556 S 458.111 412.625 455.048 412.625 Z" scaleX="0.125" scaleY="0.125" translateX="-35.5" translateY="18.5">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </SVGPath>
+                              <SVGPath content="M 455.048 389.514 c -9.681 0 -17.556 7.875 -17.556 17.556 s 7.875 17.556 17.556 17.556 s 17.556 -7.875 17.556 -17.556 S 464.729 389.514 455.048 389.514 Z M 455.048 412.625 c -3.063 0 -5.556 -2.492 -5.556 -5.556 s 2.493 -5.556 5.556 -5.556 c 3.063 0 5.556 2.492 5.556 5.556 S 458.111 412.625 455.048 412.625 Z" scaleX="0.125" scaleY="0.125" translateX="-43.5" translateY="18.5" />
+                              <SVGPath content="M 413.75 127.554 h -81.295 l -64.633 109.529 H 413.75 V 127.554 Z M 339.308 139.554 h 15.931 v 85.529 h -66.401 L 339.308 139.554 Z M 401.75 225.083 h -34.512 v -85.529 h 34.512 V 225.083 Z" scaleX="0.125" scaleY="0.125" translateX="-150.0" translateY="-10.0" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment Details" translateX="-215.0">
+                                 <font>
+                                    <Font name="Verdana" size="32.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="24.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="965.0" spacing="8.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="500.0" spacing="16.0">
+                     <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="500.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;">
+                           <children>
+                              <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="274.0" prefWidth="500.0" spacing="8.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                                       <children>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="452.0">
+                                             <children>
+                                                <TextField fx:id="CustomerNameEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="440.0">
+                                                   <font>
+                                                      <Font name="Verdana" size="32.0" />
+                                                   </font></TextField>
+                                                <Text fx:id="CustomerName" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Goes Here" wrappingWidth="432.640625">
+                                                   <font>
+                                                      <Font name="Verdana" size="32.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </StackPane>
+                                          <Button id="IconButton" fx:id="CustomerEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggleEdit" prefHeight="48.0" prefWidth="48.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                                             <graphic>
+                                                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="48.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                                                   <children>
+                                                      <SVGPath id="IconSVG" content="M5.39901 27.153C4.39798 27.153 3.4626 26.8377 2.78978 26.2524C1.93644 25.5171 1.52619 24.4066 1.67388 23.206L2.28106 18.3439C2.39593 17.4284 3.00311 16.2129 3.70875 15.5526L17.1816 2.5118C20.5457 -0.744666 24.0575 -0.834707 27.6185 2.24168C31.1795 5.31806 31.278 8.52951 27.9139 11.786L14.4411 24.8268C13.7518 25.5021 12.4718 26.1324 11.4708 26.2826L6.1867 27.1078C5.90773 27.1228 5.66157 27.153 5.39901 27.153ZM22.4493 2.22667C21.1857 2.22667 20.0862 2.947 18.9703 4.02748L5.49747 17.0834C5.16926 17.3986 4.79183 18.1489 4.72619 18.5841L4.11901 23.4461C4.05337 23.9414 4.18465 24.3466 4.48003 24.6017C4.77542 24.8568 5.2185 24.9468 5.76003 24.8718L11.0441 24.0466C11.52 23.9715 12.3077 23.5812 12.6359 23.2661L26.1088 10.2253C28.1436 8.24438 28.8821 6.41356 25.9118 3.86241C24.599 2.70689 23.4667 2.22667 22.4493 2.22667Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="8.0" />
+                                                      <SVGPath id="IconSVG" content="M 24.7638 14.2917 C 24.731 14.2917 24.6818 14.2917 24.649 14.2917 C 19.529 13.8265 15.41 10.27 14.6223 5.6179 C 14.5238 5.00262 14.9833 4.43237 15.6561 4.32732 C 16.329 4.23728 16.9525 4.65747 17.0674 5.27275 C 17.691 8.90438 20.9074 11.6956 24.9115 12.0558 C 25.5843 12.1158 26.0766 12.6711 26.011 13.2863 C 25.929 13.8565 25.3874 14.2917 24.7638 14.2917 Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="8.0" />
+                                                      <SVGPath id="IconSVG" content="M30.7692 32H1.23077C0.557949 32 0 31.4898 0 30.8745C0 30.2592 0.557949 29.749 1.23077 29.749H30.7692C31.4421 29.749 32 30.2592 32 30.8745C32 31.4898 31.4421 32 30.7692 32Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="14.0" />
+                                                   </children>
+                                                </Pane>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="8.0" top="8.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="500.0">
+                                       <children>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="452.0">
+                                             <children>
+                                                <TextField fx:id="AliasNameEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="360.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Text fx:id="AliasName" strokeType="OUTSIDE" strokeWidth="0.0" text="Alias Goes here" wrappingWidth="360.0" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin>
+                                          </StackPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="500.0">
+                                       <children>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="452.0">
+                                             <children>
+                                                <TextField fx:id="AddressEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="360.0" StackPane.alignment="CENTER_LEFT">
+                                                   <StackPane.margin>
+                                                      <Insets />
+                                                   </StackPane.margin>
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </TextField>
+                                                <Text fx:id="Address" strokeType="OUTSIDE" strokeWidth="0.0" text="Address goes here" wrappingWidth="490.0" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="500.0">
+                                       <children>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="452.0">
+                                             <children>
+                                                <TextField fx:id="PhoneNumberEdit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="360.0" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                   <StackPane.margin>
+                                                      <Insets />
+                                                   </StackPane.margin>
+                                                </TextField>
+                                                <Text fx:id="PhoneNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="Address goes here" wrappingWidth="490.0" StackPane.alignment="CENTER_LEFT">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="8.0" />
+                                             </HBox.margin>
+                                          </StackPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                                       <children>
+                                          <Text fx:id="AliasName1" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Rating:" wrappingWidth="226.0">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="29.0">
+                                             <children>
+                                                <Text fx:id="CustomerRating" strokeType="OUTSIDE" strokeWidth="0.0" text="1" wrappingWidth="15.640625">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                                <ChoiceBox fx:id="CustomerRatingEdit" prefWidth="150.0" />
+                                             </children>
+                                          </StackPane>
+                                          <Text fx:id="CustomerName21" strokeType="OUTSIDE" strokeWidth="0.0" text="/5" wrappingWidth="27.640625">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="-5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets left="8.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox fx:id="CustomerEditOptions" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                                       <children>
+                                          <Button id="AcceptCustomerChanges" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ApplyCustomerChanges" prefHeight="25.0" prefWidth="200.0" styleClass="GreenButton" stylesheets="@../../Styles/Application.css" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Verdana" size="15.0" />
+                                             </font>
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accept">
+                                                   <font>
+                                                      <Font name="Verdana" size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                             <effect>
+                                                <InnerShadow choke="0.35" color="#099a13" height="44.72" radius="33.72" width="92.16" />
+                                             </effect>
+                                          </Button>
+                                          <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggleEdit" prefHeight="25.0" prefWidth="200.0" styleClass="RedButton" stylesheets="@../../Styles/Application.css">
+                                             <graphic>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clear">
+                                                   <font>
+                                                      <Font name="Verdana" size="20.0" />
+                                                   </font>
+                                                </Text>
+                                             </graphic>
+                                             <effect>
+                                                <InnerShadow choke="0.29" color="#800202" height="82.53" radius="43.915" width="95.13" />
+                                             </effect>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Pane>
+                        <Pane id="MostRecentJob" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="500.0" styleClass="HoverablePane" stylesheets="@../../Styles/Application.css">
+                           <children>
+                              <StackPane layoutY="5.0">
+                                 <children>
+                                    <VBox fx:id="JobInfo" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#GoToJob" prefHeight="240.0" prefWidth="500.0" visible="false">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="500.0">
+                                             <children>
+                                                <Text fx:id="JobNameTile" strokeType="OUTSIDE" strokeWidth="0.0" text="This a test text">
+                                                   <font>
+                                                      <Font name="Verdana" size="36.0" />
+                                                   </font>
+                                                </Text>
+                                                <Circle fx:id="JobTileStatus" fill="DODGERBLUE" radius="24.0" stroke="BLACK" strokeType="INSIDE">
+                                                   <HBox.margin>
+                                                      <Insets left="8.0" />
+                                                   </HBox.margin>
+                                                </Circle>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="500.0">
+                                             <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current expenses $">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="CurrentExpenses" strokeType="OUTSIDE" strokeWidth="0.0" text="200.00" wrappingWidth="262.01953125">
+                                                   <font>
+                                                      <Font name="Verdana" size="24.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Details:">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="JobTileDetails" editable="false" prefHeight="109.0" prefWidth="484.0" styleClass="TextAreaMoreInfo" text="More info here" wrapText="true">
+                                             <font>
+                                                <Font name="Verdana" size="18.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding>
+                                    </VBox>
+                                    <Text fx:id="NoJob" strokeType="OUTSIDE" strokeWidth="0.0" text="No Jobs Added Yet">
+                                       <font>
+                                          <Font name="Verdana" size="36.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children></Pane>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="200.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="200.0">
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                           <children>
+                              <HBox prefHeight="64.0" prefWidth="184.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:">
+                                       <font>
+                                          <Font name="Verdana" size="36.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets right="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Button id="IconButton" fx:id="NotesEditButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggleNotesEdit" prefHeight="48.0" prefWidth="48.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                                       <graphic>
+                                          <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="48.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+                                             <children>
+                                                <SVGPath id="IconSVG" content="M5.39901 27.153C4.39798 27.153 3.4626 26.8377 2.78978 26.2524C1.93644 25.5171 1.52619 24.4066 1.67388 23.206L2.28106 18.3439C2.39593 17.4284 3.00311 16.2129 3.70875 15.5526L17.1816 2.5118C20.5457 -0.744666 24.0575 -0.834707 27.6185 2.24168C31.1795 5.31806 31.278 8.52951 27.9139 11.786L14.4411 24.8268C13.7518 25.5021 12.4718 26.1324 11.4708 26.2826L6.1867 27.1078C5.90773 27.1228 5.66157 27.153 5.39901 27.153ZM22.4493 2.22667C21.1857 2.22667 20.0862 2.947 18.9703 4.02748L5.49747 17.0834C5.16926 17.3986 4.79183 18.1489 4.72619 18.5841L4.11901 23.4461C4.05337 23.9414 4.18465 24.3466 4.48003 24.6017C4.77542 24.8568 5.2185 24.9468 5.76003 24.8718L11.0441 24.0466C11.52 23.9715 12.3077 23.5812 12.6359 23.2661L26.1088 10.2253C28.1436 8.24438 28.8821 6.41356 25.9118 3.86241C24.599 2.70689 23.4667 2.22667 22.4493 2.22667Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="8.0" />
+                                                <SVGPath id="IconSVG" content="M 24.7638 14.2917 C 24.731 14.2917 24.6818 14.2917 24.649 14.2917 C 19.529 13.8265 15.41 10.27 14.6223 5.6179 C 14.5238 5.00262 14.9833 4.43237 15.6561 4.32732 C 16.329 4.23728 16.9525 4.65747 17.0674 5.27275 C 17.691 8.90438 20.9074 11.6956 24.9115 12.0558 C 25.5843 12.1158 26.0766 12.6711 26.011 13.2863 C 25.929 13.8565 25.3874 14.2917 24.7638 14.2917 Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="8.0" />
+                                                <SVGPath id="IconSVG" content="M30.7692 32H1.23077C0.557949 32 0 31.4898 0 30.8745C0 30.2592 0.557949 29.749 1.23077 29.749H30.7692C31.4421 29.749 32 30.2592 32 30.8745C32 31.4898 31.4421 32 30.7692 32Z" scaleX="1.5" scaleY="1.5" translateX="8.0" translateY="14.0" />
+                                             </children>
+                                          </Pane>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <TextArea fx:id="NotesTextArea" editable="false" prefHeight="418.0" prefWidth="184.0" styleClass="TextAreaMoreInfo" stylesheets="@../../Styles/Application.css" text="This is a test of the notes field" wrapText="true">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </TextArea>
+                              <HBox fx:id="NotesEditConfirm" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="185.0" spacing="20.0">
+                                 <children>
+                                    <Button id="AcceptCustomerChanges" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ApplyNotesEdit" prefHeight="25.0" prefWidth="75.0" styleClass="GreenButton" stylesheets="@../../Styles/Application.css" textAlignment="CENTER">
+                                       <effect>
+                                          <InnerShadow choke="0.02" color="#099a13" height="68.44" radius="39.65" width="92.16" />
+                                       </effect>
+                                       <font>
+                                          <Font name="Verdana" size="15.0" />
+                                       </font>
+                                       <graphic>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Accept">
+                                             <font>
+                                                <Font name="Verdana" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </graphic>
+                                    </Button>
+                                    <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#toggleNotesEdit" prefHeight="25.0" prefWidth="75.0" styleClass="RedButton" stylesheets="@../../Styles/Application.css">
+                                       <effect>
+                                          <InnerShadow choke="0.2" color="#800202" height="88.83" radius="45.489999999999995" width="95.13" />
+                                       </effect>
+                                       <graphic>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Clear">
+                                             <font>
+                                                <Font name="Verdana" size="20.0" />
+                                             </font>
+                                          </Text>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="250.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="250.0" spacing="8.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment:">
+                                 <font>
+                                    <Font name="Verdana" size="36.0" />
+                                 </font>
+                              </Text>
+                              <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="234.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                                 <content>
+                                    <VBox fx:id="EquipmentCards" prefHeight="450.0" prefWidth="234.0" spacing="8.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

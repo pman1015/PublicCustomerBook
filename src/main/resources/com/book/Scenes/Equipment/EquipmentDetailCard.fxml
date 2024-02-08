@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getDetails" prefHeight="50.0" prefWidth="343.0" styleClass="HoverablePane" stylesheets="@../../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Equipment.EquipmentDetailCard">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="343.0">
+         <children>
+            <Text fx:id="ModelName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the model name " wrappingWidth="222.326171875">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="LastWorkedOn" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="06/04/2023" wrappingWidth="89.326171875">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="40.0" prefWidth="433.0" style="-fx-background-color: white; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Bills.BillLaborCharge">
+   <children>
+      <Label fx:id="Rate" layoutX="14.0" layoutY="11.0" prefHeight="18.0" prefWidth="119.0" text="Rate">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Hours" layoutX="161.0" layoutY="11.0" prefHeight="18.0" prefWidth="96.0" text="Hours">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Charge" layoutX="291.0" layoutY="11.0" prefHeight="18.0" prefWidth="92.0" text="Charge">
+         <font>
+            <Font name="Verdana" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <effect>
+      <DropShadow color="#000000bf" offsetX="5.0" offsetY="5.0" spread="0.32" />
+   </effect>
+</AnchorPane>

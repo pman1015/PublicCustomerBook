@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentLoader">
+   <children>
+      <HBox prefHeight="626.0" prefWidth="1000.0" spacing="10.0">
+         <children>
+            <AnchorPane fx:id="LeftSideContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+               <children>
+                  <VBox fx:id="List" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="20.0" style="-fx-background-color: #09715E; -fx-background-radius: 10 10 0 0;">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Model" wrappingWidth="103.62890625">
+                                 <font>
+                                    <Font name="Verdana" size="24.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane prefHeight="50.0" prefWidth="299.0">
+                                 <children>
+                                    <Button id="IconButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#CreateNewModel" prefHeight="50.0" prefWidth="50.0" styleClass="IconButton" stylesheets="@../../Styles/Application.css" AnchorPane.rightAnchor="0.0">
+                                       <graphic>
+                                          <SVGPath id="IconSVG" content="M256,512C114.625,512,0,397.391,0,256C0,114.609,114.625,0,256,0c141.391,0,256,114.609,256,256  C512,397.391,397.391,512,256,512z M256,64C149.969,64,64,149.969,64,256s85.969,192,192,192c106.047,0,192-85.969,192-192  S362.047,64,256,64z M288,384h-64v-96h-96v-64h96v-96h64v96h96v64h-96V384z" scaleX="0.09765" scaleY="0.09765" />
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <Pane id="AddButtonContainer" prefHeight="34.0" prefWidth="37.0" styleClass="AddButtonContainer" />
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </HBox>
+                        <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefViewportHeight="509.0" prefViewportWidth="406.0" prefWidth="406.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                           <content>
+                              <VBox fx:id="ModelCards" prefHeight="483.0" prefWidth="406.0" spacing="8.0">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane>
+               <children>
+                  <VBox fx:id="RightSideContent" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="570.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</Pane>

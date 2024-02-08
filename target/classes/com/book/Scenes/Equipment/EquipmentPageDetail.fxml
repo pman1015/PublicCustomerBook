@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="EquipmentDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentPageDetail">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="570.0" style="-fx-background-color: #09715e; -fx-background-radius: 5;" stylesheets="@../../Styles/Application.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="570.0" spacing="8.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="570.0" style="-fx-background-color: white; -fx-background-radius: 5 5 0 0;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equipment Details" wrappingWidth="468.439453125">
+                           <font>
+                              <Font name="Verdana Bold" size="36.0" />
+                           </font>
+                        </Text>
+                        <Button id="IconButton" mnemonicParsing="false" onAction="#Close" styleClass="IconButton">
+                           <graphic>
+                              <SVGPath id="IconSVG" content="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.2813 L 7.71875 43.7188 L 25 26.4375 L 42.2813 43.7188 L 43.7188 42.2813 L 26.4375 25 L 43.7188 7.71875 L 42.2813 6.28125 L 25 23.5625 Z" />
+                           </graphic>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="570.0" spacing="8.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Model Number:">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="ModelNumber" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This is the Model number">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </HBox>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes:">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <TextArea fx:id="EquipmentNotes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="320.0" styleClass="TransparentTextField">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Compatible Parts:">
+                     <font>
+                        <Font name="Verdana" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox>
+                     <children>
+                        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="340.0" styleClass="TransparentScrollPane">
+                           <content>
+                              <VBox fx:id="PartsContainer" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="310.0" style="-fx-border-color: Black;" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css" />
+                           </content>
+                           <VBox.margin>
+                              <Insets left="8.0" />
+                           </VBox.margin>
+                        </ScrollPane>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="222.0" spacing="8.0">
+                           <children>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AddNewPart" prefHeight="50.0" prefWidth="220.0" styleClass="GreenButton" text="Add New Part">
+                                 <font>
+                                    <Font name="Verdana" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AddPartFromInventory" prefHeight="50.0" prefWidth="220.0" styleClass="GreenButton" text="Add Part From Inventory">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

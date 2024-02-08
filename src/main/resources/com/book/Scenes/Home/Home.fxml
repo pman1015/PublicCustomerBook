@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" stylesheets="@../../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Home.HomeLoader">
+   <children>
+      <VBox layoutX="1.0" layoutY="-1.0" prefHeight="622.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="1.0" layoutY="-1.0" prefHeight="163.0" prefWidth="1000.0" spacing="10.0">
+               <children>
+                  <Pane prefHeight="107.0" prefWidth="400.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;">
+                     <children>
+                        <VBox layoutY="2.0" prefHeight="128.0" prefWidth="400.0">
+                           <children>
+                              <HBox prefHeight="32.0" prefWidth="231.0">
+                                 <children>
+                                    <Text stroke="#0d0d0d" strokeWidth="0.0" text="Total Jobs Pending:" wrappingWidth="243.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="TotalJobsPendingLabel" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="110.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="32.0" prefWidth="400.0">
+                                 <children>
+                                    <Text stroke="#0d0d0d" strokeWidth="0.0" text="New Jobs This Week:" wrappingWidth="259.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Text>
+                                    <Text fx:id="NewJobsWeekly" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="79.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="32.0" prefWidth="400.0">
+                                 <children>
+                                    <Text stroke="#0d0d0d" strokeWidth="0.0" text="Jobs Comleted Last Week:" wrappingWidth="330.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="JobsCompleted" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="63.048828125">
+                                       <font>
+                                          <Font name="Verdana" size="24.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </Pane>
+                  <Pane prefHeight="160.0" prefWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;">
+                     <children>
+                        <VBox prefHeight="204.0" prefWidth="300.0">
+                           <children>
+                              <Text stroke="BLACK" strokeLineJoin="BEVEL" strokeMiterLimit="8.0" strokeWidth="0.0" text="Income" textAlignment="CENTER" wrappingWidth="299.169921875">
+                                 <font>
+                                    <Font name="Verdana" size="36.0" />
+                                 </font>
+                              </Text>
+                              <HBox alignment="CENTER" prefHeight="32.0" prefWidth="300.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Week" textAlignment="RIGHT" wrappingWidth="136.724609375">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="WeeklyIncome" strokeType="OUTSIDE" strokeWidth="0.0" text="\$200" wrappingWidth="141.875">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="32.0" prefWidth="300.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Month" textAlignment="RIGHT" wrappingWidth="136.724609375">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="MontlyIncome" strokeType="OUTSIDE" strokeWidth="0.0" text="\$200" wrappingWidth="141.875">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="32.0" prefWidth="300.0" spacing="5.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year" textAlignment="RIGHT" wrappingWidth="136.724609375">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fx:id="YearlyIncome" strokeType="OUTSIDE" strokeWidth="0.0" text="\$200" wrappingWidth="141.875">
+                                       <font>
+                                          <Font name="Verdana" size="18.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox prefHeight="435.0" prefWidth="973.0" spacing="8.0">
+               <children>
+                  <Pane prefHeight="458.0" prefWidth="537.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-border-radius: 10;">
+                     <children>
+                        <VBox layoutX="-4.0" prefHeight="435.0" prefWidth="543.0">
+                           <children>
+                              <Pane style="-fx-border-color: black;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="69.0" prefWidth="548.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Job Name" textAlignment="CENTER" wrappingWidth="182.349609375">
+                                             <font>
+                                                <Font name="Verdana" size="36.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Client" textAlignment="CENTER" wrappingWidth="182.349609375">
+                                             <font>
+                                                <Font name="Verdana" size="36.0" />
+                                             </font>
+                                          </Text>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="167.349609375">
+                                             <font>
+                                                <Font name="Verdana" size="36.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <ScrollPane prefHeight="343.0" prefWidth="510.0" styleClass="TransparentScrollPane" stylesheets="@../Styles/Application.css">
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                 </VBox.margin>
+                                 <content>
+                                    <VBox fx:id="JobCardContainer" prefHeight="330.0" prefWidth="500.0" spacing="5.0" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="435.0" prefWidth="447.0" style="-fx-background-color: white;">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="14.0" prefHeight="421.0" prefWidth="411.0">
+                           <children>
+                              <Pane prefHeight="100.0" prefWidth="411.0" style="-fx-background-color: #065143;">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" layoutX="7.0" layoutY="-4.0" prefHeight="100.0" prefWidth="411.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses" textAlignment="CENTER" wrappingWidth="402.158203125">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                          </Text>
+                                          <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="403.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Weekly: " textAlignment="RIGHT" wrappingWidth="196.326171875">
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="WeeklyExpenses" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$100.00" wrappingWidth="189.13671875">
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="YTD: " textAlignment="RIGHT" wrappingWidth="196.326171875">
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                                <Text fx:id="YTDExpenses" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$100.00" wrappingWidth="189.13671875">
+                                                   <font>
+                                                      <Font name="Verdana" size="18.0" />
+                                                   </font>
+                                                </Text>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                              <Pane style="-fx-background-color: #05392F;">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="411.0">
+                                       <children>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" textAlignment="CENTER" wrappingWidth="231.890625">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" textAlignment="CENTER" wrappingWidth="177.890625">
+                                             <font>
+                                                <Font name="Verdana" size="24.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Pane>
+                              <ScrollPane prefViewportHeight="260.0" prefViewportWidth="411.0" styleClass="TransparentScrollPane" stylesheets="@../Styles/Application.css">
+                                 <content>
+                                    <VBox fx:id="ExpenseContainer" prefHeight="251.0" prefWidth="396.0" spacing="5.0">
+                                       <children>
+                                          <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="396.0" style="-fx-background-color: #09715E; -fx-background-radius: 5;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" layoutY="-2.0" prefHeight="48.0" prefWidth="396.0">
+                                                   <children>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Blades" wrappingWidth="203.13671875">
+                                                         <font>
+                                                            <Font name="Verdana" size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="\$***.**" wrappingWidth="190.13671875">
+                                                         <font>
+                                                            <Font name="Verdana" size="36.0" />
+                                                         </font>
+                                                      </Text>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: Black;" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Jobs.JobCreate">
+   <children>
+      <Pane fx:id="JobCreate" layoutX="320.0" layoutY="88.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="360.0" style="-fx-background-color: white; -fx-background-radius: 5;" stylesheets="@../../Styles/Application.css" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="320.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="88.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="450.0" prefWidth="360.0">
+               <children>
+                  <HBox fx:id="Title" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create A New Job">
+                           <font>
+                              <Font name="Verdana" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="Title1" alignment="TOP_CENTER" prefHeight="48.0" prefWidth="360.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Job Name:">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <TextField fx:id="JobNameEdit" prefHeight="25.0" prefWidth="207.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label fx:id="JobNameError" layoutY="29.0" prefHeight="17.0" prefWidth="199.0" styleClass="errorText" text="Label" textFill="RED" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="Title11" alignment="TOP_CENTER" prefHeight="48.0" prefWidth="360.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Machine:">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane>
+                           <children>
+                              <Label fx:id="MachineError" layoutY="29.0" prefHeight="17.0" prefWidth="199.0" styleClass="errorText" text="Label" textFill="RED" />
+                              <ComboBox fx:id="MachineOptions" editable="true" layoutX="-2.0" layoutY="2.0" prefHeight="25.0" prefWidth="227.0" styleClass="ComboBox" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Job Descritpion:">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="JobDescription" maxWidth="-Infinity" prefHeight="100.0" prefWidth="174.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="CustomerNameContainer" alignment="TOP_CENTER" prefHeight="48.0" prefWidth="360.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name:" wrappingWidth="98.2744140625">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane prefHeight="48.0" prefWidth="192.0">
+                           <children>
+                              <Label fx:id="CustomerNameError" layoutY="29.0" prefHeight="17.0" prefWidth="199.0" styleClass="errorText" text="Label" textFill="RED" />
+                              <ComboBox fx:id="CustomerNameOptions" editable="true" layoutX="-2.0" layoutY="2.0" prefHeight="25.0" prefWidth="225.0" styleClass="ComboBox" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="73.0" prefWidth="360.0" spacing="16.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#CreateJob" prefHeight="48.0" prefWidth="140.0" styleClass="GreenButton" text="Create">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#Cancel" prefHeight="48.0" prefWidth="140.0" styleClass="RedButton" text="Cancel">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="16.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

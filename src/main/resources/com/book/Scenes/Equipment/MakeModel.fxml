@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="528.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Equipment.EquipmentMakeEquipment">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Model" textAlignment="CENTER" wrappingWidth="439.560546875">
+               <font>
+                  <Font name="Verdana" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#Close" styleClass="IconButton" stylesheets="@../../Styles/Application.css">
+               <graphic>
+                  <Pane id="CloseButtonContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="40.0">
+                     <children>
+                        <SVGPath id="CloseButton" content="M 134 185 c 15 -23 15 -27 0 -50 c -9 -14 -12 -25 -6 -25 c 6 0 16 8 22 18 c 10 16 10 16 20 0 c 6 -10 16 -18 22 -18 c 6 0 3 11 -6 25 c -15 23 -15 27 0 50 c 9 14 12 25 6 25 c -6 0 -16 -8 -22 -17 c -10 -17 -10 -17 -20 0 c -6 9 -16 17 -22 17 c -6 0 -3 -11 6 -25 Z" scaleX="0.28" scaleY="0.28" translateX="-140.0" translateY="-140.0" />
+                        <SVGPath id="CloseButton" content="M 115 271 c -45 -20 -70 -60 -70 -112 c 0 -42 5 -53 33 -81 c 28 -28 39 -33 82 -33 c 43 0 54 5 82 33 c 28 28 33 39 33 82 c 0 42 -5 54 -31 81 c -33 33 -92 46 -129 30 Z m 94 -25 c 67 -35 65 -143 -4 -174 c -51 -23 -107 -7 -131 39 c -47 91 44 182 135 135 " scaleX="0.15" scaleY="0.15" translateX="-140.0" translateY="-142.0" />
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="564.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Model Name" wrappingWidth="157.07421875">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+            <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="64.0">
+               <children>
+                  <TextField fx:id="ModelName" prefHeight="25.0" prefWidth="298.0" AnchorPane.topAnchor="15.0">
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Text fx:id="ModelNameError" fill="RED" layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" wrappingWidth="264.13671875" AnchorPane.bottomAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" wrappingWidth="70.07421875">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="ModelNotes" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="86.0" prefWidth="475.0">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </TextArea>
+      <Button mnemonicParsing="false" onAction="#AddModel" prefHeight="51.0" prefWidth="271.0" styleClass="NavigationButton" stylesheets="@../../Styles/Application.css" text="Add">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</VBox>

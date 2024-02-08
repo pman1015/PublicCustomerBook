@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#LoadDetails" prefHeight="32.0" prefWidth="500.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Inventory.InventoryCard">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="188.0">
+         <children>
+            <Text fx:id="PartNumber" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Belt Number 229" wrappingWidth="184.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="87.0">
+         <children>
+            <Text fx:id="InStock" layoutX="25.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29" wrappingWidth="60.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="90.0">
+         <children>
+            <Text fx:id="PurchasePrice" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$25.00" wrappingWidth="94.0859375" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="112.0">
+         <children>
+            <Text fx:id="RetailPrice" layoutX="-2.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$25.00" wrappingWidth="109.78125" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="6.0">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

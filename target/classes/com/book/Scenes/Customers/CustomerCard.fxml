@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane minHeight="-Infinity" onMouseClicked="#MoreInfo" prefHeight="93.0" prefWidth="943.0" style="-fx-background-color: white; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Models.Customer.Customer">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="1.0" prefHeight="100.0" prefWidth="943.0" spacing="20.0">
+         <children>
+            <Text fx:id="Name" strokeType="OUTSIDE" strokeWidth="0.0" text="Name goes here" wrappingWidth="387.4931640625">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="Alias" strokeType="OUTSIDE" strokeWidth="0.0" text="Alias Goes Here" wrappingWidth="422.10546875">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="Progress" strokeType="OUTSIDE" strokeWidth="0.0" text="5/5">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</Pane>

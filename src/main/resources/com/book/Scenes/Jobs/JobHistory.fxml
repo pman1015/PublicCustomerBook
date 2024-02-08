@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="Self" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="1000.0" style="-fx-background-color: black;" stylesheets="@../Styles/Application.css" translateY="-37.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.Loaders.Jobs.JobHistoryLoader">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="-4.0" prefHeight="626.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="982.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="823.0" spacing="8.0">
+                     <children>
+                        <Button id="GenericButton" fx:id="BackButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Back" prefHeight="56.0" prefWidth="161.0" styleClass="GenericButton" stylesheets="@../../Styles/Application.css" text="BackButton">
+                           <font>
+                              <Font name="Verdana" size="32.0" />
+                           </font>
+                           <graphic>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <SVGPath content="M 24.998 40.094 c 1.338 1.352 1.338 3.541 0 4.893 c -1.338 1.35 -3.506 1.352 -4.846 0 L 1.004 25.447 c -1.338 -1.352 -1.338 -3.543 0 -4.895 L 20.152 1.014 c 1.34 -1.352 3.506 -1.352 4.846 0 c 1.338 1.352 1.338 3.541 0 4.893 L 9.295 23 L 24.998 40.094 Z" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Back">
+                                       <font>
+                                          <Font name="Verdana" size="32.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="8.0" />
+                                       </HBox.margin>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="JobName">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="32.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Job Description">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="86.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start/End Date">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="24.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Status">
+                           <font>
+                              <Font name="Verdana" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="32.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="538.0" prefWidth="953.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#CreateNewJob" prefHeight="74.0" prefWidth="120.0" style="-fx-border-color: white; -fx-border-radius: 5;" styleClass="TransparentButtonNoSVG" stylesheets="@../../Styles/Application.css" text="Create New Job" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <HBox.margin>
+                        <Insets right="16.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Verdana" size="18.0" />
+                     </font>
+                  </Button>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="836.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" layoutY="5.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefViewportHeight="524.0" prefViewportWidth="965.0" prefWidth="836.0" styleClass="TransparentScrollPane" stylesheets="@../../Styles/Application.css">
+                           <content>
+                              <VBox fx:id="JobCardContainer" layoutY="7.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="835.0" spacing="8.0">
+                                 <padding>
+                                    <Insets left="8.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="128.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="16.0" />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

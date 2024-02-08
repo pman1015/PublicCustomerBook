@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="NavMenu" fx:id="NavBar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="200.0" style="-fx-background-color: #065143;" stylesheets="@../Styles/Application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.SceneController">
+   <children>
+      <Button contentDisplay="CENTER" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToHome" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" stylesheets="@Styles/Application.css" text="Home" textAlignment="CENTER" textOverrun="CLIP">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToCustomers" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" text="Customers">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToEquipment" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" text="Equipment">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToInventory" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" text="Inventory">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToJobs" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" text="Jobs">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToBills" prefHeight="40.0" prefWidth="192.0" styleClass="NavigationButton" text="Bills">
+         <VBox.margin>
+            <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
